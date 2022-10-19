@@ -13,17 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Pixel Sounds - redfin-user 11 RQ3A.210705.001 7380771 release-keys
+# Pixel Sounds - cheetah-user 13 TD1A.220804.009.A2 8940162 release-keys
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/arrow/sounds/pixel/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
-
-# 2019 Material product sounds (CC-BY 4.0)
-# Source: https://material.io/design/sound/sound-resources.html
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/arrow/sounds/material/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
+    $(call find-copy-subdir-files,*,vendor/arrow/sounds/,$(TARGET_COPY_OUT_PRODUCT)/media/audio)
 
 # Set default sounds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.alarm_alert=Bright_morning.ogg \
-    ro.config.notification_sound=End_note.ogg \
-    ro.config.ringtone=The_big_adventure.ogg
+    ro.config.alarm_alert=Fresh_start.ogg \
+    ro.config.notification_sound=Eureka.ogg \
+    ro.config.ringtone=Your_new_adventure.ogg
